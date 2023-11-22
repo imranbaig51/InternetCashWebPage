@@ -1,0 +1,217 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+body {
+  font-family: Manrope;
+  font-weight: 400;
+  line-height:normal;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../Fonts/Manrope/Manrope-ExtraLight.otf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../Fonts/Manrope/Manrope-Light.otf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../Fonts/Manrope/Manrope-Medium.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../Fonts/Manrope/Manrope-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../Fonts/Manrope/Manrope-SemiBold.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../Fonts/Manrope/Manrope-Bold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../Fonts/Manrope/Manrope-ExtraBold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../Fonts/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../Fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 500;
+}
+.bg-sky-blue{
+    background-color: #F6F6FB;
+}
+.bg-black{
+    background-color: black;
+}
+.heading {
+  .Dashboard-navigation {
+    font-size: 14px;
+    @media (min-width: 576px) {
+      font-size: 18px;
+    }
+    .text2 {
+      font-weight: 500;
+    }
+  }
+  .profile {
+    .title {
+      display: none;
+      @media (min-width: 576px) {
+        display: block;
+      }
+      span {
+        font-family: Montserrat;
+        color: #717177;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.greeting-bar{
+.greeting-msg{
+    background-color: #19B03F29 ;
+    border-radius: 8px;
+    width: 100%;
+//     @media (min-width: 992px) {
+//         width: 80%;
+//  }
+ .greetings{
+    font-size: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    @media (min-width: 992px) {
+        font-size: 14px;
+    }
+ }
+ .creater-name{
+    font-size: 24px;
+    font-weight: 700;
+
+ }
+ .msg{
+    font-size: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    @media (min-width: 1200px) {
+        font-size: 14px;
+    }
+ }
+}
+.Explore-creater-btn{
+ border-radius: 8px;
+ border: none;
+ background-color: #19B03F;
+// background: var(--Green, #19B03F)
+ color: white;
+ font-size: 12px;
+ font-family: Montserrat;
+ filter: drop-shadow(0px 4px 0px #0f7428);
+ @media (min-width: 576px) {
+    width: 250px;
+    padding-top: .8rem !important;
+    padding-bottom: .8rem !important;
+ }
+}
+.Explore-creater-btn:hover{
+  background-color: #2fcd57;
+}
+}
+.creater-profiles{
+    .creater-profiles-heading{
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        h6{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        p{
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 100;
+            color: #25273380;
+        }
+    }
+    .profile-card{
+        min-width: 150px;
+        width:250px;
+        border-radius: 12px;
+        background-color: white;
+        overflow: hidden;
+        .profile-pic{
+            position: relative;
+              max-width: 90px;
+              .active-dot{
+                position: absolute;
+                right: 0;
+              }
+        }
+        .name-email{
+            .profile-name{
+                font-weight: 600;
+            }
+         .email{
+            font-family:Montserrat;
+            color: #25273380;
+            font-size: 14px;
+         }
+         .creatives{
+            font-weight: 600;
+         }
+        }
+        .rating{
+            background-color: #19B03F29;
+            width: 100%;
+        }
+    }
+}
+.profile-card{
+    min-width: 150px;
+    width:250px;
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
+    .profile-pic{
+        position: relative;
+          max-width: 90px;
+          .active-dot{
+            position: absolute;
+            right: 0;
+          }
+    }
+    .name-email{
+        .profile-name{
+            font-weight: 600;
+        }
+     .email{
+        font-family:Montserrat;
+        color: #25273380;
+        font-size: 14px;
+     }
+     .creatives{
+        font-weight: 600;
+     }
+    }
+    .rating{
+        background-color: #19B03F29;
+        width: 100%;
+    }
+}
