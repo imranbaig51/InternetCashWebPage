@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 ;
   box-sizing: border-box;
 }
 
@@ -68,11 +68,12 @@ img {
   src: url(../Fonts/Montserrat/Montserrat-SemiBold.ttf);
   font-weight: 500;
 }
-
 .bg-sky-blue {
   background-color: #F6F6FB;
 }
-
+.cursor-pointer{
+  cursor: pointer;
+}
 .bg-black {
   background-color: black;
 }
@@ -112,10 +113,6 @@ img {
     background-color: #19B03F29;
     border-radius: 8px;
     width: 100%;
-
-    //     @media (min-width: 992px) {
-    //         width: 80%;
-    //  }
     .greetings {
       font-size: 10px;
       font-family: Montserrat;
@@ -142,7 +139,6 @@ img {
       }
     }
   }
-
   .Explore-creater-btn {
     border-radius: 8px;
     border: none;
@@ -182,44 +178,44 @@ img {
     }
   }
 
-  .profile-card {
-    min-width: 150px;
-    width: 250px;
-    border-radius: 12px;
-    background-color: white;
-    overflow: hidden;
+  // .profile-card {
+  //   min-width: 150px;
+  //   width: 250px;
+  //   border-radius: 12px;
+  //   background-color: white;
+  //   overflow: hidden;
 
-    .profile-pic {
-      position: relative;
-      max-width: 90px;
+  //   .profile-pic {
+  //     position: relative;
+  //     max-width: 90px;
 
-      .active-dot {
-        position: absolute;
-        right: 0;
-      }
-    }
+  //     .active-dot {
+  //       position: absolute;
+  //       right: 0;
+  //     }
+  //   }
 
-    .name-email {
-      .profile-name {
-        font-weight: 600;
-      }
+  //   .name-email {
+  //     .profile-name {
+  //       font-weight: 600;
+  //     }
 
-      .email {
-        font-family: Montserrat;
-        color: #25273380;
-        font-size: 14px;
-      }
+  //     .email {
+  //       font-family: Montserrat;
+  //       color: #25273380;
+  //       font-size: 14px;
+  //     }
 
-      .creatives {
-        font-weight: 600;
-      }
-    }
+  //     .creatives {
+  //       font-weight: 600;
+  //     }
+  //   }
 
-    .rating {
-      background-color: #19B03F29;
-      width: 100%;
-    }
-  }
+  //   .rating {
+  //     background-color: #19B03F29;
+  //     width: 100%;
+  //   }
+  // }
 }
 
 .profile-card {
@@ -228,6 +224,8 @@ img {
   border-radius: 12px;
   background-color: white;
   overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
   .profile-pic {
     position: relative;
@@ -258,5 +256,133 @@ img {
   .rating {
     background-color: #19B03F29;
     width: 100%;
+    // height: fit-content;
   }
+}
+
+.profile-card:hover{
+  @media (min-width: 576px){
+  scale: 1.1;
+}
+}
+
+// starting new css
+.text-color-light-gry {
+  color: rgba(37, 39, 51, 0.50);
+}
+
+.border-botom {
+  border-bottom: 2px solid rgba(37, 39, 51, 0.50);
+}
+
+.progress-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progres {
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 3px 4px 16px 3px rgba(68, 37, 167, 0.03);
+}
+
+.employ-progress {
+  display: flex;
+  gap: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.creators-box {
+  width: 184px;
+  height: 150px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.heading-31::after {
+  content: url('/images/bulb.svg');
+  position: absolute;
+  top: 1rem;
+  right: 2px;
+  width: 11.5rem;
+}
+
+.heading-235::after {
+  content: url('/images/computer.svg');
+  position: absolute;
+  top: 1rem;
+  right: 2px;
+  width: 11.5rem;
+}
+
+.heading-Awg-cost::after {
+  content: url('/images/money-bag.png');
+  position: absolute;
+  top: 1rem;
+  right: 2px;
+  width: 11.5rem;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.blue-bar,
+.yellow-bar,
+.sky-blue-bar,
+.green-bar,
+.red-bar {
+  width: 28px;
+  height: 14px;
+  border-radius: 7px 0px 0px 7px;
+}
+
+.blue-bar {
+  background: #5C9DF1;
+}
+
+.yellow-bar {
+  background: #FFD75C;
+}
+
+.sky-blue-bar {
+  background: #5FDEEF;
+}
+
+.green-bar {
+  background: #40C96E;
+}
+
+.red-bar {
+  background: #FF837B;
+}
+.map{
+  border-radius: 12px;  
+  background: #FFF;
+  box-shadow: 3px 4px 16px 3px rgba(68, 37, 167, 0.03);
+}
+.progress-bar-in-map{
+  width: 10rem;
+}
+.notif-bar{
+  display: none;
+  @media (min-width: 992px){
+   display: flex;
+  }
+}
+.pt-5 {
+  padding-top: 2rem !important;
+}
+.pt-6{
+  padding-top: 3rem !important;
+}
+.fs-6 {
+  font-size: 1rem !important;
+}
+.fs-7{
+  font-size: 2.5rem !important;
 }
